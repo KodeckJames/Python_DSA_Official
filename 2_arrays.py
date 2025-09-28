@@ -29,3 +29,45 @@ def insert_new_price():
     print(stock_prices)
 insert_new_price()
 
+# EXERCISE
+# https://github.com/codebasics/data-structures-algorithms-python/blob/master/data_structures/2_Arrays/2_arrays_exercise.md
+# Question 1
+# a)
+monthly_expenses =  [2200, 2350, 2600, 2130, 2190]
+
+def feb_extra_expenses():
+    extra_expense=monthly_expenses[1]-monthly_expenses[0]
+    return extra_expense
+result=feb_extra_expenses()
+print(result)
+
+# b)
+def expenses_in_first_three_months():
+    total=0
+    for i in range(3):
+        total+=monthly_expenses[i]
+    return total
+total_expenses=expenses_in_first_three_months()
+print(total_expenses)
+
+# c)
+def expenditure_of_2000():
+    for expense in monthly_expenses:
+        if expense==2000:
+            return True
+        return False
+print(expenditure_of_2000())
+
+# d)
+def add_June_expenditure():
+    monthly_expenses.append(1980)
+    return monthly_expenses
+print(add_June_expenditure())
+
+# e)
+def April_correction():
+    new_April_expenditure=monthly_expenses[3]-200
+    monthly_expenses[3]=new_April_expenditure
+    return monthly_expenses
+print(April_correction())
+    
