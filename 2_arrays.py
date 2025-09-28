@@ -16,3 +16,9 @@ def get_stock_price(stock_price):
         
 answer=get_stock_price(785)
 print(answer)
+
+# SCENARIO 3: PRINT ALL PRICES
+def print_all_stocks():
+    for stock_price in stock_prices:
+        print(stock_price)
+print_all_stocks()
