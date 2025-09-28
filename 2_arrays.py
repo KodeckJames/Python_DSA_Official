@@ -22,3 +22,10 @@ def print_all_stocks():
     for stock_price in stock_prices:
         print(stock_price)
 print_all_stocks()
+
+# SCENARIO 4: INSERTING NEW PRICE e.g. 284 AT INDEX 1
+def insert_new_price():
+    stock_prices.insert(1, 284)
+    print(stock_prices)
+insert_new_price()
+
