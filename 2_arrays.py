@@ -105,3 +105,14 @@ def list_of_odd_numbers():
     return odd_numbers
 
 print(list_of_odd_numbers())
+
+# Q3 2nd solution
+def list_of_odd_numbers_2():
+    odd_numbers=[]
+    max_number=int(input("Enter the max number: "))
+    for i in range(1, max_number):
+        if i%2==1:
+            odd_numbers.append(i)
+    return odd_numbers
+
+print(list_of_odd_numbers_2())
