@@ -92,3 +92,16 @@ print(heroes)
 # e)
 heroes.sort()
 print(heroes)
+
+# Question 3
+def list_of_odd_numbers():
+    user_input=int(input("Enter maximum number: "))
+    odd_numbers=[]
+    initial_odd_number=1
+    while initial_odd_number < user_input:
+        initial_odd_number+=1
+        if initial_odd_number%2!=0:
+            odd_numbers.append(initial_odd_number)   
+    return odd_numbers
+
+print(list_of_odd_numbers())
