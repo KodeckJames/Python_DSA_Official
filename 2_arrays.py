@@ -70,4 +70,25 @@ def April_correction():
     monthly_expenses[3]=new_April_expenditure
     return monthly_expenses
 print(April_correction())
-    
+
+# Question 2
+# a)
+heroes=['spider man','thor','hulk','iron man','captain america']
+print(len(heroes))
+
+# b)
+heroes.append('black panther')
+print(heroes)
+
+# c)
+heroes.pop()
+heroes.insert(3, 'black panther')
+print(heroes)
+
+# d)
+heroes[1:3]=["doctor strange"]
+print(heroes)
+
+# e)
+heroes.sort()
+print(heroes)
