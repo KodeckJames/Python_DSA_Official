@@ -98,3 +98,60 @@ if __name__=='__main__':
     ll.print()
     ll.insert_at(2,"Jackfruit")
     ll.print()
+
+#EASIER IMPLEMENTATION OF THE LINKED LIST
+class SinglyNode:
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+
+    def __str__(self):
+        return str(self.val)
+
+
+# def __str__(self): is a special function in a class that tells Python what to show when you print the object.
+
+# To make a linked list, you generally have reference only to the head:
+Head = SinglyNode(1)
+A = SinglyNode(3)
+B = SinglyNode(4)
+C = SinglyNode(7)
+
+Head.next = A
+A.next = B
+B.next = C
+
+print(Head)
+
+# Traverse the list - O(n)
+curr = Head
+
+while curr:
+    print(curr)
+    curr = curr.next
+
+
+# Display the linked list
+def display(head):
+    curr = head
+    elements = []
+    while curr:
+        elements.append(str(curr.val))
+        curr = curr.next
+    print("->".join(elements))
+
+
+display(Head)
+
+
+# Search for a node value - O(n)
+def search(head, val):
+    curr = head
+    while curr:
+        if val == curr.val:
+            return True
+        curr = curr.next
+    return False
+
+
+print(search(Head, 7))
